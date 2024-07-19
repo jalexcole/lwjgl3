@@ -80,6 +80,7 @@ This script is included in /config/build-definitions.xml.
     <property name="binding.vulkan" value="true"/>
     <condition property="binding.vma" value="true" else="false"><istrue value="${binding.vulkan}"/></condition>
     <property name="binding.xxhash" value="true"/>
+    <property name="binding.wgpu" value="true"/>
     <property name="binding.yoga" value="true"/>
     <property name="binding.zstd" value="true"/>
 
@@ -152,6 +153,8 @@ This script is included in /config/build-definitions.xml.
                 <sequential if:true="${binding.vma}"><local name="module"/><property name="module" value="vma"/><body/></sequential>
                 <sequential if:true="${binding.vulkan}"><local name="module"/><property name="module" value="vulkan"/><body/></sequential>
                 <sequential if:true="${binding.xxhash}"><local name="module"/><property name="module" value="xxhash"/><body/></sequential>
+                <sequential if:true="${binding.wgpu}"><local name="module"/><property name="module" value="wgpu"/><body/></sequential>
+
                 <sequential if:true="${binding.yoga}"><local name="module"/><property name="module" value="yoga"/><body/></sequential>
                 <sequential if:true="${binding.zstd}"><local name="module"/><property name="module" value="zstd"/><body/></sequential>
             </parallel>

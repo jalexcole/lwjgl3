@@ -531,6 +531,7 @@
             <compileBinding binding="tootle"/>
             <compileBinding binding="vulkan"/>
             <compileBinding binding="xxhash"/>
+            <compileBinding binding="wgpu"/>
             <compileBinding binding="yoga"/>
             <compileBinding binding="zstd"/>
         </parallel>
@@ -1985,6 +1986,9 @@
 
         <!-- xxHash -->
         <release-module name="xxhash" native-library="lwjgl_xxhash" title="xxHash" if:true="${binding.xxhash}"/>
+
+        <!-- xxHash -->
+        <release-module name="wgpu" native-library="lwjgl_wgpu" title="wgpu" if:true="${binding.wgpu}"/>
 
         <!-- yoga -->
         <release-module name="yoga" native-library="lwjgl_yoga" title="yoga" if:true="${binding.yoga}"/>

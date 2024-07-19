@@ -311,6 +311,11 @@ enum class Artifacts(
         "An extremely fast hash algorithm, running at RAM speed limits.",
         *Platforms.ALL
     ),
+    WGPU(
+        "lwjgl-wgpu", "LWJGL - wgpu bindings",
+        "wgpu is a cross-platform, safe, pure-rust graphics API. It runs natively on Vulkan, Metal, D3D12, and OpenGL.",
+        *Platforms.ALL
+    ),
     YOGA(
         "lwjgl-yoga", "LWJGL - Yoga bindings",
         "An open-source, cross-platform layout library that implements Flexbox.",

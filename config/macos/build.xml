@@ -353,6 +353,9 @@
         <!-- xxHash -->
         <build_simple module="xxhash"/>
 
+        <!-- wgpu -->
+        <build_simple module="wgpu"/>
+
         <!-- yoga -->
         <build module="yoga" simple="true" lang="c++" if:true="${binding.yoga}">
             <beforeCompile>

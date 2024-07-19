@@ -52,6 +52,7 @@ bin/classes/lwjgl/tootle:\
 bin/classes/lwjgl/vma:\
 bin/classes/lwjgl/vulkan:\
 bin/classes/lwjgl/xxhash:\
+bin/classes/lwjgl/wgpu:\
 bin/classes/lwjgl/yoga:\
 bin/classes/lwjgl/zstd:\
 bin/classes/samples:\
