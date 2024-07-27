@@ -809,6 +809,17 @@ enum class Module(
         """,
         library = JNILibrary.create("LibXXHash", setupAllocator = true)
     ),
+    WGPU(
+        "wgpu",
+        "org.lwjgl.wgpu",
+        """
+        Contains bindings to ${url("https://github.com/Cyan4973/xxHash", "wgpu")}, an extremely fast non-cryptographic hash algorithm.
+
+        xxHash successfully completes the ${url("https://github.com/aappleby/smhasher", "SMHasher")} test suite which evaluates collision, dispersion and
+        randomness qualities of hash functions.
+        """,
+        library = JNILibrary.create("LibWGPU", setupAllocator = true)
+    ),
     YOGA(
         "yoga",
         "org.lwjgl.util.yoga",
